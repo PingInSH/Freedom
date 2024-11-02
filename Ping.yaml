@@ -1,7 +1,7 @@
 proxy-providers:
   TW No.1:
     interval: 600
-    url: https://hongxingdl.com/hxvip?token=0548064d7d22a951995daae308efb122
+    url: 
 mode: rule
 dns:
   default-nameserver:
