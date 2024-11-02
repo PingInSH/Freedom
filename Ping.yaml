@@ -468,7 +468,6 @@ rule-providers:
     type: classical
     format: yaml
     interval: 86400
-    format: text
     url: https://clashios.app/static/rules/wechat-classical-set.yaml
 script:
   shortcuts:
