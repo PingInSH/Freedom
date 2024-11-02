@@ -14,38 +14,38 @@ dns:
     - https://dns.twnic.tw/dns-query
 
 proxies:
-  - name: 直连
+  - name: 直連
     type: direct
     udp: true
 
 proxy-groups:
-  - name: 默认节点
+  - name: 默認節點
     type: select
     proxies:
       - 自動選擇
-      - 直连
-      - HK
-      - TW
-      - JP
-      - KR
-      - US
-      - SG
-      - 其他地区
-      - 全部节点
+      - 直連
+      - HK 香港
+      - TW 台灣
+      - JP 日本
+      - KR 韓國
+      - US 美國
+      - SG 新加坡
+      - 其他地區
+      - 全部節點
 
   - name: OpenAI
     type: select
     proxies:
-      - 默认节点
-      - HK
-      - TW
-      - JP
-      - KR
-      - US
-      - SG
-      - 其他地区
+      - 默認節點
+      - HK 香港
+      - TW 台灣
+      - JP 日本
+      - KR 韓國
+      - US 美國
+      - SG 新加坡
+      - 其他地區
       - 自動選擇
-      - 直连
+      - 直連
 
   # 其他代理组请按需添加...
 
@@ -53,23 +53,23 @@ rules:
   - SCRIPT,quic,REJECT
   - RULE-SET,category-ai-chat-!cn,OpenAI
   - RULE-SET,telegram,Telegram
-  - RULE-SET,biliintl,哔哩哔哩东南亚
+  - RULE-SET,biliintl,哔哩哔哩東南亞
   - RULE-SET,bahamut,巴哈姆特
   - RULE-SET,youtube,YouTube
   - RULE-SET,netflix,NETFLIX
   - RULE-SET,spotify,Spotify
   - RULE-SET,disney,Disney+
   - RULE-SET,tiktok,TikTok
-  - RULE-SET,steam@cn,国内网站
+  - RULE-SET,steam@cn,國內網站
   - RULE-SET,steam,Steam
-  - RULE-SET,pixiv,其他外网
+  - RULE-SET,pixiv,其他外網
   - RULE-SET,google-cn,Google
   - RULE-SET,apple-cn,Apple
-  - RULE-SET,microsoft@cn,国内网站
+  - RULE-SET,microsoft@cn,國內網站
   - RULE-SET,microsoft,Microsoft
-  - GEOIP,LAN,直连,no-resolve
-  - GEOIP,CN,国内网站,no-resolve
-  - MATCH,其他外网
+  - GEOIP,LAN,直連,no-resolve
+  - GEOIP,CN,國內網站,no-resolve
+  - MATCH,其他外網
 
 rule-providers:
   category-ai-chat-!cn:
