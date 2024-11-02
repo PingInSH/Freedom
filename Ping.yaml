@@ -363,7 +363,7 @@ rules:
   - RULE-SET,apple-cn,Apple
   - RULE-SET,microsoft@cn,國內網站
   - RULE-SET,microsoft,Microsoft
-  #- RULE-SET,CN-Only,國內網站
+  - RULE-SET,CN-Only,國內網站
   - GEOIP,LAN,直連,no-resolve
   - GEOIP,CN,國內網站,no-resolve
   - MATCH,其他外網
@@ -464,12 +464,12 @@ rule-providers:
     behavior: domain
     format: text
     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft.list
-  #CN-Only:
-  #  type: http
-  #  interval: 86400
-  #  behavior: domain
-  #  format: text
-  #  url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list
+  CN-Only:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: text
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
