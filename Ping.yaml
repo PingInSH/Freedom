@@ -363,7 +363,7 @@ rules:
   - RULE-SET,apple-cn,Apple
   - RULE-SET,microsoft@cn,國內網站
   - RULE-SET,microsoft,Microsoft
-  - RULE-SET,CN-Only,國內網站
+  #- RULE-SET,CN-Only,國內網站
   - GEOIP,LAN,直連,no-resolve
   - GEOIP,CN,國內網站,no-resolve
   - MATCH,其他外網
