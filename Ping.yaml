@@ -473,3 +473,4 @@ rule-providers:
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
+subscribe-url: https://hongxingdl.com/hxvip?token=0548064d7d22a951995daae308efb122  
