@@ -10,11 +10,11 @@ dns:
   nameserver:
     - https://dns.google/dns-query
     - https://dns.twnic.tw/dns-query
+  follow-rule: true
 proxies:
   - name: 直連
     type: DIRECT
     udp: true
-  follow-rule: true
 proxy-groups:
   - name: 默認節點
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
