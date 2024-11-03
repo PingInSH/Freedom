@@ -7,7 +7,6 @@ dns:
   default-nameserver:
     - 1.1.1.1
     - 8.8.8.8
-    - system
   nameserver:
     - https://dns.google/dns-query
     - https://dns.twnic.tw/dns-query
@@ -245,17 +244,17 @@ proxy-groups:
     type: select
     proxies:
       - 直連
-      - 默認節點
-      - HK 香港
-      - TW 台灣
-      - JP 日本
-      - KR 韓國
-      - US 美國
-      - SG 新加坡
+      #      - 默認節點
+      #      - HK 香港
+      #      - TW 台灣
+      #      - JP 日本
+      #      - KR 韓國
+      #      - US 美國
+      #      - SG 新加坡
       #      - TK 土耳其
-      - 其他地區
-      - 全部節點
-      - 自動選擇
+      #      - 其他地區
+      #      - 全部節點
+      #      - 自動選擇
   - name: 其他外網
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Streaming!CN.png
     type: select
@@ -366,7 +365,7 @@ rules:
   - RULE-SET,WeChat,國內網站
   - GEOIP,LAN,直連,no-resolve
   - GEOIP,CN,國內網站,no-resolve
-  - MATCH,其他外網
+  - MATCH,國內網站
 rule-providers:
   category-ai-chat-!cn:
     type: http
