@@ -366,7 +366,7 @@ rules:
   - RULE-SET,WeChat,國內網站
   - GEOIP,LAN,直連,no-resolve
   - GEOIP,CN,國內網站,no-resolve
-  - DOMAIN-KEYWORD,TW,TW 台灣
+  - DOMAIN-KEYWORD,TW,自動選擇
   - MATCH,國內網站
 rule-providers:
   category-ai-chat-!cn:
