@@ -8,77 +8,77 @@ proxy-providers:
     #   interval: 600
 proxy-groups:
   # 功能分组
-  - name: 选择代理
+  - name: 選擇代理
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
     type: select
     proxies:
-      - 自动选择
-      - 手动选择
+      - 自動選擇
+      - 手動選擇
       - HK 香港
-      - TW 台湾
+      - TW 台灣
       - SG 新加坡
       - JP 日本
-      - US 美国
+      - US 美國
       - DIRECT
   - name: Netflix
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
     type: select
     proxies:
-      - 自动选择
-      - 手动选择
+      - 自動選擇
+      - 手動選擇
       - HK 香港
-      - TW 台湾
+      - TW 台灣
       - SG 新加坡
       - JP 日本
-      - US 美国
+      - US 美國
       - DIRECT
   - name: Disney+
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Disney%2B.png
     type: select
     proxies:
-      - 自动选择
-      - 手动选择
+      - 自動選擇
+      - 手動選擇
       - HK 香港
-      - TW 台湾
+      - TW 台灣
       - SG 新加坡
       - JP 日本
-      - US 美国
+      - US 美國
       - DIRECT
   - name: Spotify
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png
     type: select
     proxies:
-      - 自动选择
-      - 手动选择
+      - 自動選擇
+      - 手動選擇
       - HK 香港
-      - TW 台湾
+      - TW 台灣
       - SG 新加坡
       - JP 日本
-      - US 美国
+      - US 美國
       - DIRECT
   - name: YouTube
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
     type: select
     proxies:
-      - 自动选择
-      - 手动选择
+      - 自動選擇
+      - 手動選擇
       - HK 香港
-      - TW 台湾
+      - TW 台灣
       - SG 新加坡
       - JP 日本
-      - US 美国
+      - US 美國
       - DIRECT
   - name: Speedtest
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Speedtest.png
     type: select
     proxies:
-      - 自动选择
-      - 手动选择
+      - 自動選擇
+      - 手動選擇
       - HK 香港
-      - TW 台湾
+      - TW 台灣
       - SG 新加坡
       - JP 日本
-      - US 美国
+      - US 美國
       - DIRECT
   # 基于地区分组
   - name: HK 香港
@@ -89,7 +89,7 @@ proxy-groups:
     tolerance: 50
     type: url-test
     include-all: true
-  - name: TW 台湾
+  - name: TW 台灣
     filter: "台|🇹🇼|湾|TW|(?i)Taiwan"
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Taiwan.png
     interval: 120
@@ -113,7 +113,7 @@ proxy-groups:
     tolerance: 50
     type: url-test
     include-all: true
-  - name: US 美国
+  - name: US 美國
     filter: "美|🇺🇲|US|(?i)States|America"
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
     interval: 120
@@ -121,14 +121,14 @@ proxy-groups:
     tolerance: 50
     type: url-test
     include-all: true
-  - name: 自动选择
+  - name: 自動選擇
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Auto.png
     interval: 120
     lazy: true
     tolerance: 50
     type: url-test
     include-all: true
-  - name: 手动选择
+  - name: 手動選擇
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
     interval: 120
     lazy: true
@@ -136,8 +136,8 @@ proxy-groups:
     include-all: true
 rules:
   - RULE-SET,WeChat,DIRECT
-  - DOMAIN-KEYWORD,line,选择代理
-  - DOMAIN-SUFFIX,tw,TW 台湾
+  - DOMAIN-KEYWORD,line,選擇代理
+  - DOMAIN-SUFFIX,tw,TW 台灣
   - SCRIPT,quic,REJECT
   # Netflix
   - GEOSITE,netflix,Netflix
@@ -148,40 +148,40 @@ rules:
   # Speedtest
   - GEOSITE,speedtest,Speedtest
   # GitHub
-  - GEOSITE,github,选择代理
+  - GEOSITE,github,選擇代理
   # Telegram
-  - IP-ASN,62014,选择代理,no-resolve
-  - IP-ASN,59930,选择代理,no-resolve
-  - IP-ASN,44907,选择代理,no-resolve
-  - IP-ASN,211157,选择代理,no-resolve
-  - PROCESS-NAME,Telegram.exe,选择代理
-  - PROCESS-NAME,Telegram,选择代理
-  - GEOSITE,telegram,选择代理
+  - IP-ASN,62014,選擇代理,no-resolve
+  - IP-ASN,59930,選擇代理,no-resolve
+  - IP-ASN,44907,選擇代理,no-resolve
+  - IP-ASN,211157,選擇代理,no-resolve
+  - PROCESS-NAME,Telegram.exe,選擇代理
+  - PROCESS-NAME,Telegram,選擇代理
+  - GEOSITE,telegram,選擇代理
   # YouTube
   - GEOSITE,youtube,YouTube
   # Google
-  - GEOSITE,google,选择代理
+  - GEOSITE,google,選擇代理
   # Twitter
-  - GEOSITE,twitter,选择代理
-  - DOMAIN-SUFFIX,tapbots.com,选择代理
+  - GEOSITE,twitter,選擇代理
+  - DOMAIN-SUFFIX,tapbots.com,選擇代理
   # Instagram
-  - GEOSITE,instagram,选择代理
+  - GEOSITE,instagram,選擇代理
   # Facebook
-  - GEOSITE,facebook,选择代理
+  - GEOSITE,facebook,選擇代理
   # Steam
   - GEOSITE,steam@cn,DIRECT
-  - GEOSITE,steam,选择代理
+  - GEOSITE,steam,選擇代理
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
   - DOMAIN-SUFFIX,push.apple.com,DIRECT
   # Apple OCSP
-  - PROCESS-NAME,trustd,选择代理
+  - PROCESS-NAME,trustd,選擇代理
   # Microsoft
   - GEOSITE,microsoft@cn,DIRECT
-  - GEOSITE,microsoft,选择代理
-  - GEOSITE,xbox,选择代理
+  - GEOSITE,microsoft,選擇代理
+  - GEOSITE,xbox,選擇代理
   # common proxy utils
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,Surge,DIRECT
