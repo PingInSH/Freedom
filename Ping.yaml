@@ -3,9 +3,9 @@ proxy-providers:
   TW No.1:
     url: https://hongxingdl.com/hxvip?token=0548064d7d22a951995daae308efb122
     interval: 600
-    # 服务提供商-2:
-    #   url: http://your-another-service-provider
-    #   interval: 600
+  TW No.2:
+    url: https://zl.yxig.cn/link/I7PswXjOeXREDrqt?clash=1
+    interval: 600
 proxy-groups:
   # 功能分组
   - name: 選擇代理
