@@ -135,6 +135,7 @@ proxy-groups:
     type: select
     include-all: true
 rules:
+  - RULE-SET,WeChat,DIRECT
   - DOMAIN-KEYWORD,line,选择代理
   - DOMAIN-SUFFIX,tw,TW 台湾
   - SCRIPT,quic,REJECT
@@ -225,3 +226,9 @@ dns:
 log-level: warning
 mode: rule
 subscribe-url: https://hongxingdl.com/hxvip?token=0548064d7d22a951995daae308efb122
+rule-providers:
+  WeChat:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: https://clashios.app/static/rules/wechat-classical-set.yaml
