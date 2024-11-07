@@ -4,7 +4,7 @@ proxy-providers:
     url: https://hongxingdl.com/hxvip?token=0548064d7d22a951995daae308efb122
     interval: 600
   TW No.2:
-    url: https://subapi.fxxk.dedyn.io/sub?&url=https%3A%2F%2Fyt.xn--49sq15btnijvp.xn--fiqs8s%2Fyt%3Ftoken%3D38e2c537ab0f84fb23af5cec0b18848e&target=clash&emoji=true&append_type=true&append_info=true&scv=false&udp=true&list=false&sort=false&fdn=true&insert=false
+    url: https://yt.xn--49sq15btnijvp.xn--fiqs8s/yt?token=38e2c537ab0f84fb23af5cec0b18848e
     interval: 600
   TW No.3:
     url: https://zl.yxig.cn/link/I7PswXjOeXREDrqt?clash=1
