@@ -210,7 +210,7 @@ rules:
   - PROCESS-NAME,WebTorrent,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,DIRECT
+  - MATCH,選擇代理
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
