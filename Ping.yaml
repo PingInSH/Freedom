@@ -138,10 +138,6 @@ proxy-groups:
     type: select
     include-all: true
 rules:
-  #- RULE-SET,WeChat,DIRECT
-  #- DOMAIN-KEYWORD,DCARD,選擇代理
-  #- DOMAIN-KEYWORD,LINE,選擇代理
-  #- DOMAIN-SUFFIX,tw,TW 台灣
   - SCRIPT,quic,REJECT
   # Netflix
   - GEOSITE,netflix,Netflix
