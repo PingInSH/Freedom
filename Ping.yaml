@@ -1,4 +1,3 @@
-#SUBSCRIBED https://raw.githubusercontent.com/PingInSH/Freedom/refs/heads/main/Ping.yaml
 proxy-providers:
   TW No.1:
     url: https://hongxingdl.com/hxvip?token=0548064d7d22a951995daae308efb122
@@ -138,7 +137,10 @@ proxy-groups:
     type: select
     include-all: true
 rules:
-  - SCRIPT,quic,REJECT
+  - RULE-SET,WeChat,DIRECT
+  - DOMAIN-KEYWORD,DCARD,選擇代理
+  - DOMAIN-KEYWORD,LINE,選擇代理
+  - DOMAIN-SUFFIX,tw,TW 台灣
   # Netflix
   - GEOSITE,netflix,Netflix
   # Disney+
