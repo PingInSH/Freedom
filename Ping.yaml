@@ -1,12 +1,12 @@
 proxy-providers:
   TW No.1:
-    url: http://106.55.228.246:36666/hxvip?token=0548064d7d22a951995daae308efb122
+    url: 
     interval: 600
   TW No.2:
-    url: https://yt.xn--49sq15btnijvp.xn--fiqs8s/yt?token=38e2c537ab0f84fb23af5cec0b18848e
+    url: 
     interval: 600
   TW No.3:
-    url: https://zl.yxig.cn/link/I7PswXjOeXREDrqt?clash=1
+    url: 
     interval: 600
 proxy-groups:
   # 功能分组
