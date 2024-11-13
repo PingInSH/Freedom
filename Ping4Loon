@@ -29,7 +29,9 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 [Proxy]
 
 [Remote Proxy]
-紅杏出牆 = http://106.55.228.246:36666/hxvip?token=0548064d7d22a951995daae308efb122,udp=true,fast-open=default,vmess-aead=true,skip-cert-verify=true,enabled=true,flexible-sni=true,img-url=bookmark.fill
+0.1 = https://yt.xn--49sq15btnijvp.xn--fiqs8s/yt?token=38e2c537ab0f84fb23af5cec0b18848e,parser-enabled = true,udp=true,fast-open=default,vmess-aead=true,skip-cert-verify=true,enabled=true,flexible-sni=true
+丹尼爾 = https://zl.yxig.cn/link/I7PswXjOeXREDrqt?sub=4,parser-enabled = true,udp=true,fast-open=default,vmess-aead=true,skip-cert-verify=true,enabled=true,flexible-sni=true
+紅杏出牆 = http://106.55.228.246:36666/hxvip?token=0548064d7d22a951995daae308efb122,parser-enabled = true,udp=true,fast-open=default,vmess-aead=true,skip-cert-verify=true,enabled=true,flexible-sni=true,img-url=bookmark.fill
 
 [Remote Filter]
 游戏节点 = NameRegex, FilterKey = "^(?=.*((?i)游戏|🎮|(\b(GAME)\b)))(?!.*((?i)回国|校园)).*$"
@@ -42,16 +44,18 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 美国节点 = NameRegex, FilterKey = "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 
 [Proxy Group]
+自动场景 = ssid,default=自动选择,cellular=自动选择,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bypass.png
 # --------------------------------
 # SSID地区场景策略
-香港场景 = ssid,default=香港策略,cellular=香港策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-台湾场景 = ssid,default=台湾策略,cellular=台湾策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-日本场景 = ssid,default=日本策略,cellular=日本策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-韩国场景 = ssid,default=韩国策略,cellular=韩国策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-新国场景 = ssid,default=新国策略,cellular=新国策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-美国场景 = ssid,default=美国策略,cellular=美国策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-游戏场景 = ssid,default=游戏手动,cellular=游戏手动,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-手动场景 = ssid,default=全球手动,cellular=全球手动,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+香港场景 = ssid,default=香港策略,cellular=香港策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HK.png
+台湾场景 = ssid,default=台湾策略,cellular=台湾策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png
+日本场景 = ssid,default=日本策略,cellular=日本策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JP.png
+韩国场景 = ssid,default=韩国策略,cellular=韩国策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/KR.png
+新国场景 = ssid,default=新国策略,cellular=新国策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png
+美国场景 = ssid,default=美国策略,cellular=美国策略,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png
+游戏场景 = ssid,default=游戏手动,cellular=游戏手动,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png
+手动场景 = ssid,default=全球手动,cellular=全球手动,"SPECS"=DIRECT,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_2.png
+自动选择 = url-test,紅杏出牆,丹尼爾,url = http://cp.cloudflare.com/generate_204,interval = 600,tolerance = 10,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png
 # --------------------------------
 # 手动选择地区策略
 香港策略 = select,香港时延优选,香港故障转移,香港负载均衡,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
@@ -63,37 +67,38 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 # --------------------------------
 # 自动
 # 时延优选
-香港时延优选 = url-test,香港节点,url = http://cp.cloudflare.com/generate_204,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
-台湾时延优选 = url-test,台湾节点,url = http://cp.cloudflare.com/generate_204,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-日本时延优选 = url-test,日本节点,url = http://cp.cloudflare.com/generate_204,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
-韩国时延优选 = url-test,韩国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
-新国时延优选 = url-test,新国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-美国时延优选 = url-test,美国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+香港时延优选 = url-test,香港节点,url = http://cp.cloudflare.com/generate_204,interval = 600,tolerance = 20,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+台湾时延优选 = url-test,台湾节点,url = http://cp.cloudflare.com/generate_204,interval = 600,tolerance = 20,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+日本时延优选 = url-test,日本节点,url = http://cp.cloudflare.com/generate_204,interval = 600,tolerance = 20,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+韩国时延优选 = url-test,韩国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,tolerance = 20,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+新国时延优选 = url-test,新国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,tolerance = 20,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+美国时延优选 = url-test,美国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,tolerance = 20,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 # --------------------------------
 # 故障转移
-香港故障转移 = fallback,香港节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
-台湾故障转移 = fallback,台湾节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-日本故障转移 = fallback,日本节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
-韩国故障转移 = fallback,韩国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
-新国故障转移 = fallback,新国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-美国故障转移 = fallback,美国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+香港故障转移 = fallback,香港节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+台湾故障转移 = fallback,台湾节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+日本故障转移 = fallback,日本节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+韩国故障转移 = fallback,韩国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+新国故障转移 = fallback,新国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+美国故障转移 = fallback,美国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 # --------------------------------
 # 负载均衡
-香港负载均衡 = load-balance,香港节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
-台湾负载均衡 = load-balance,台湾节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-日本负载均衡 = load-balance,日本节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
-韩国负载均衡 = load-balance,韩国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
-新国负载均衡 = load-balance,新国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-美国负载均衡 = load-balance,美国节点,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+香港负载均衡 = load-balance,香港节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+台湾负载均衡 = load-balance,台湾节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+日本负载均衡 = load-balance,日本节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+韩国负载均衡 = load-balance,韩国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+新国负载均衡 = load-balance,新国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+美国负载均衡 = load-balance,美国节点,url = http://cp.cloudflare.com/generate_204,interval = 600,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 # --------------------------------
 # 手动
 游戏手动 = select,游戏节点,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png
 全球手动 = select,全球节点,url = http://cp.cloudflare.com/generate_204,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 # --------------------------------
 # 兜底策略故障转移
-兜底后备 = fallback,台湾场景,香港场景,日本场景,韩国场景,新国场景,美国场景,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fallback.png
+兜底后备 = fallback,自动场景,0.1,url = http://cp.cloudflare.com/generate_204,interval = 60,max-timeout = 2000,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fallback.png
 
 [Rule]
+DOMAIN-KEYWORD,dcard,香港场景
 # Local Rule
 # Type:DOMAIN-SUFFIX,DOMAIN,DOMAIN-KEYWORD,USER-AGENT,URL-REGEX,IP-CIDR,IP-CIDR6,IP-ASN
 # Strategy:DIRECT,Proxy,REJECT
